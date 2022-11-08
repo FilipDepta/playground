@@ -17,7 +17,7 @@ async def favicon(request):
 app = Starlette(
     debug=True,
     routes=[
-        Route("/", homepage),
+        Route('/', homepage),
         Route("/favicon.ico", favicon),
     ],
 )
